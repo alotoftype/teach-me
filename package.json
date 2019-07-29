@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "./node_modules/.bin/parcel build ./index.html",
-    "dev": "concurrently './node_modules/.bin/parcel ./index.html' 'node ./server'",
+    "dev": "concurrently './node_modules/.bin/parcel ./index.html' 'nodemon ./server'",
     "start": "NODE_ENV=production node ./server",
     "test": "echo 'Your test command goes here'"
   },
@@ -27,6 +27,7 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1"
   }
 }
